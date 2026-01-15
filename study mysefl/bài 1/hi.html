@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Khai báo chuẩn HTML5, giúp trình duyệt hiểu đây là file HTML mới -->
+
+<html lang="vi">
+<!-- Thẻ gốc của toàn bộ trang web -->
+<!-- lang="vi" báo cho trình duyệt và Google biết nội dung là tiếng Việt -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Hỗ trợ tiếng Việt có dấu, tránh lỗi font -->
+
+    <title>Project Web Cơ Bản</title>
+    <!-- Tiêu đề trang web:
+         - Hiện trên tab trình duyệt
+         - Hiện trên kết quả tìm kiếm Google -->
+
+    <!-- SEO cơ bản -->
+    <meta name="description" content="Project web cơ bản cho người mới học HTML, CSS, JavaScript">
+    <!-- Mô tả ngắn nội dung website, thường hiện dưới tiêu đề trên Google -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Giúp web hiển thị tốt trên điện thoại và tablet -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Kết nối file CSS bên ngoài để tạo giao diện -->
+</head>
+
+<body>
+<!-- Phần hiển thị nội dung cho người dùng -->
+
+    <header>
+    <!-- Phần đầu trang web (logo, tiêu đề, slogan) -->
+
+        <h1>Chào mừng đến với Project Web</h1>
+        <!-- Tiêu đề chính của trang (mỗi trang chỉ nên có 1 h1) -->
+
+        <p>Website học tập HTML, CSS, JavaScript</p>
+        <!-- Đoạn mô tả ngắn cho phần header -->
+    </header>
+
+    <main>
+    <!-- Phần nội dung chính của trang -->
+
+        <section>
+        <!-- Một khu vực nội dung độc lập -->
+
+            <h2>Giới thiệu</h2>
+            <!-- Tiêu đề phụ cho section -->
+
+            <p>
+                Đây là project web đơn giản dành cho người mới học lập trình web.
+            </p>
+            <!-- Nội dung mô tả -->
+
+            <button onclick="sayHello()">Bấm vào đây</button>
+            <!-- Nút bấm -->
+            <!-- Khi click sẽ gọi hàm sayHello() trong file script.js -->
+        </section>
+
+    </main>
+
+    <footer>
+    <!-- Phần cuối trang web -->
+
+        <p>© 2026 - Le Tran Hieu Nhan</p>
+        <!-- Thông tin bản quyền / tác giả -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- Kết nối file JavaScript -->
+    <!-- Thường đặt cuối body để web load nhanh hơn -->
+</body>
+
+</html>
