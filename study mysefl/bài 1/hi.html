@@ -26,10 +26,10 @@
 </head>
 
 <body>
-<!-- Phần hiển thị nội dung cho người dùng -->
+    <!-- Phần hiển thị nội dung cho người dùng -->
 
     <header>
-    <!-- Phần đầu trang web (logo, tiêu đề, slogan) -->
+        <!-- Phần đầu trang web (logo, tiêu đề, slogan) -->
 
         <h1>Chào mừng đến với Project Web</h1>
         <!-- Tiêu đề chính của trang (mỗi trang chỉ nên có 1 h1) -->
@@ -39,10 +39,10 @@
     </header>
 
     <main>
-    <!-- Phần nội dung chính của trang -->
+        <!-- Phần nội dung chính của trang -->
 
         <section>
-        <!-- Một khu vực nội dung độc lập -->
+            <!-- Một khu vực nội dung độc lập -->
 
             <h2>Giới thiệu</h2>
             <!-- Tiêu đề phụ cho section -->
@@ -60,7 +60,7 @@
     </main>
 
     <footer>
-    <!-- Phần cuối trang web -->
+        <!-- Phần cuối trang web -->
 
         <p>© 2026 - Le Tran Hieu Nhan</p>
         <!-- Thông tin bản quyền / tác giả -->
@@ -69,6 +69,58 @@
     <script src="js/script.js"></script>
     <!-- Kết nối file JavaScript -->
     <!-- Thường đặt cuối body để web load nhanh hơn -->
+
+    <!--nhập dữ liệu từ người dùng -->
+    <input type="text" placeholder="Nhập tên">
+    <!-- placeholder: văn bản hiển thị bên trong ô khi chưa nhập gì -->
+    <!-- type="text": ô nhập văn bản thông thường -->
+
+
+    <input type="password" placeholder="Nhập mật khẩu">
+    <!-- type="password": ô nhập mật khẩu, ký tự nhập vào sẽ ẩn đi -->
+
+    <input type="checkbox"> HTML
+    <input type="checkbox"> CSS
+    <input type="checkbox"> JavaScript
+    <!-- type="checkbox": ô chọn nhiều lựa chọn -->
+
+    <input type="radio" name="gender"> Nam
+    <input type="radio" name="gender"> Nữ
+    <!-- type="radio": ô chọn một trong nhiều lựa chọn -->
+
+    <form>
+        <input type="text" name="username" placeholder="Tên đăng nhập">
+        <input type="password" name="password" placeholder="Mật khẩu">
+        <input type="submit">
+    </form>
+    <!-- type="submit": nút gửi form -->
+
+    <form>
+        <input type="text" name="username" placeholder="Tên đăng nhập" value="Hieu nhan">
+    </form>
+
+
+
+    <form action="xuly.php" method="POST">
+        <label>Họ tên:</label><br>
+        <input type="text" name="fullname"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <input type="submit" value="Gửi">
+    </form>
+    <!-- action: nơi gửi dữ liệu khi submit form
+     method: phương thức gửi dữ liệu (GET hoặc POST) -->
+
+    <button>Click me</button>
+    <!-- nút bấm không có chức năng gì -->
+     <button type="reset">Xóa</button>
+    <!-- nút bấm xóa dữ liệu trong form -->
+    <button type="submit">Gửi</button>
+    <!-- nút bấm gửi dữ liệu trong form -->
+
+
 </body>
 
 </html>
