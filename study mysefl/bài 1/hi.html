@@ -84,8 +84,16 @@
     <input type="checkbox"> JavaScript
     <!-- type="checkbox": ô chọn nhiều lựa chọn -->
 
-    <input type="radio" name="gender"> Nam
-    <input type="radio" name="gender"> Nữ
+    <form>
+        <input type="radio" name="gender"> Nam
+        <input type="radio" name="gender"> Nữ
+    </form>
+
+    <from>
+        <input type="radio" name="gender"> Nam
+        <input type="radio" name="gender"> gay
+    </from>
+
     <!-- type="radio": ô chọn một trong nhiều lựa chọn -->
 
     <form>
@@ -115,10 +123,44 @@
 
     <button>Click me</button>
     <!-- nút bấm không có chức năng gì -->
-     <button type="reset">Xóa</button>
+    <button type="reset">Xóa</button>
     <!-- nút bấm xóa dữ liệu trong form -->
     <button type="submit">Gửi</button>
     <!-- nút bấm gửi dữ liệu trong form -->
+
+
+    <form action="url" method="post">
+        <label>
+            <input type="radio" name="web-dev" value="fe"> front end dev
+        </label>
+        <label>
+            <input type="radio" name="web-dev" value="be"> back end dev
+        </label>
+
+    </form>
+
+    <hr>
+    <!-- dòng kẻ ngang để phân tách nội dung -->
+    <div>
+        <h2>Bảng điểm học tập</h2>
+        Học kỳ 1:
+        <ul>
+            <li>CT054H - Lập trình căn bản A: 8.5 (B+)</li>
+            <li>CT110H - Cơ sở dữ liệu: 8.2 (B+)</li>
+            <li>Điểm trung bình học kỳ: 8.35 (B+)</li>
+            <li><a href="mailto:nhan@gmail.com">nhan@gmail.com</a></li>
+            <li><a href="mailto:nhan@gmail.com?cc=someone@example.com&subject=hi you">nhan@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <code>console.log("Hello");</code>
+    <p>Dùng <code>type="email"</code> để gợi ý email.</p>
+
+    <pre><code>
+    function hello() {
+        console.log("Hello world");
+    }
+</code></pre>
 
 
 </body>
