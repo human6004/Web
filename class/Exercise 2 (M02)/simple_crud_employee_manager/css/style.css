@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background: linear-gradient(135deg, #eef4ff 0%, #f8fbff 50%, #f5f7fb 100%);
+    color: #1f2937;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+h1 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    margin: 28px 0 18px;
+    color: #111827;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+p,
+li,
+label,
+input,
+td,
+th,
+a,
+div {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 18px 0 28px;
+}
+
+.login-link,
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link:hover,
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 22px;
+    line-height: 1.8;
+}
+
+form {
+    margin: 20px 0 24px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #374151;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    max-width: 360px;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #111827;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    border-color: #3b82f6;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+input[type="submit"],
+.button {
+    display: inline-block;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+input[type="submit"]:hover,
+.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.18);
+    opacity: 0.96;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0 24px;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+}
+
+th,
+td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 14px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background: #eff6ff;
+    color: #1e3a8a;
+    font-weight: 700;
+}
+
+tr:nth-child(even) td {
+    background: #f9fafb;
+}
+
+tr:hover td {
+    background: #eef6ff;
+}
+
+.message {
+    padding: 14px 16px;
+    margin: 18px 0;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.success {
+    background: #ecfdf3;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.error {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.result-count {
+    color: #dc2626;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.inline-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+    flex-wrap: wrap;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.inline-form .field {
+    flex: 1 1 280px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer {
+    margin-top: 18px;
+    color: #6b7280;
+    font-style: italic;
+    font-size: 16px;
+    padding-top: 14px;
+    border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 14px;
+    }
+
+    .container {
+        padding: 20px 16px;
+        border-radius: 14px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+        max-width: 100%;
+    }
+
+    .inline-form {
+        padding: 14px;
+    }
+}
