@@ -1,0 +1,12 @@
+.main-edit-form .upload-form-title::after {
+    content: 'Update your article details and save changes.';
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 8px;
+}
+
+body.dark-mode .main-edit-form .upload-form-title::after {
+    color: #d1d5db;
+}
